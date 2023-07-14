@@ -1,5 +1,6 @@
 # Assignment for React application for new employee
 
+
 Create React application using fakestore.com API to show at least of 10 products. For each product add button "Add to cart" that will add the product to cart. The cart is displayed as a table at the right side of the product table. Under the cart table will be the total value of cart. You can implement it using bootstrap or material-ui library but it is not required. Please do assignment without using Chat GPT or other AI tool.
 
 # Getting Started with Create React App
