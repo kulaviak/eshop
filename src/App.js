@@ -2,12 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Container, Grid } from '@material-ui/core';
 import Product from './Product';
 import Cart from './Cart';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+import ButtonAppBar from './ButtonAppBar';
+import Typography from '@material-ui/core/Typography';
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -25,16 +21,11 @@ const App = () => {
 
   return (
     <div>
-      <AppBar position="static">
-        <Toolbar variant="dense">
-          <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" color="inherit" component="div">
-            Photos
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <ButtonAppBar/>
+      <br/>
+      <Typography component="h1" variant="h3" align="center" color="textPrimary" gutterBottom>
+          Clothes
+      </Typography>      
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={9}>
